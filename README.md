@@ -13,12 +13,14 @@
     • Algorithm times are written in Big O notation.
 
 ## Selection Sort
+
 [Code implementation](/implementation/selection_sort.js)
 
     • Selection sort is a neat algorithm, but it’s not very fast O(n^2).
     • Quicksort is a faster sorting algorithm that only takes O(n log n) time.
 
 ## QuickSort
+
 [Code implementation](/implementation/quick_sort.js)
 
     • If you’re implementing quicksort, choose a random element as the
@@ -27,6 +29,33 @@
         quicksort is faster than merge sort.
     • The constant almost never matters for simple search versus binary
         search, because O(log n) is so much faster than O(n) when your list gets big.
+
+## Breadth-first search
+
+    • Breadth-irst search tells you if there’s a path from A to B.
+    • If there’s a path, breadth-irst search will ind the shortest path.
+    • If you have a problem like “ind the shortest X,” try modeling your
+        problem as a graph, and use breadth-irst search to solve.
+    • A directed graph has arrows, and the relationship follows the
+        direction of the arrow (rama -> adit means “rama owes adit money”).
+    • Undirected graphs don’t have arrows, and the relationship goes both
+        ways (ross - rachel means “ross dated rachel and rachel dated ross”).
+    • Queues are FIFO (First In, First Out).
+    • Stacks are LIFO (Last In, First Out).
+    • You need to check people in the order they were added to the search
+        list, so the search list needs to be a queue. Otherwise, you won’t get
+        the shortest path.
+    • Once you check someone, make sure you don’t check them again.
+        Otherwise, you might end up in an ininite loop.
+
+## Dijkstra’s algorithm
+
+    • Breadth-irst search is used to calculate the shortest path for
+        an unweighted graph.
+    • Dijkstra’s algorithm is used to calculate the shortest path for
+    a weighted graph.
+    • Dijkstra’s algorithm works when all the weights are positive.
+    • If you have negative weights, use the Bellman-Ford algorithm.
 
 # Data Structure
 
